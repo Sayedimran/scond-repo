@@ -1,5 +1,147 @@
 
-
+/* share style */
 *{
+    font-family: 'Open Sans', sans-serif;
+}
+.btn-primary{
+    padding: 20px 25px ;
+    border-radius: 8px;
+    background: #FF900E;
+    width: 180px;
+    height: 64px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px ;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav>ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right:30px ;
+    font-weight: 500;
+    font-size: 1rem;
+}
+nav li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.877);
+}
+.font-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.884);
+}
+.banner-contant{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.ban-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: black;
+}
+.ban-decription{
+      color: #727272;
+}
+.banner-architect img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.team-container{
+   display: flex;
+ align-items: center;
+   
+
+}  
+
+
+ .tems-img-container{
+    display: grid ;
+    grid-template-columns: repeat( 2,1fr );
+    gap: 1.5rem;
+  
+   
+}
+.teams-contant{
+    padding-right:70px ;
+    padding-left: 70px;
+} 
+.teams-title{
+    font-size: 3rem;
+    
+}
+.teams-title .quick-list{
+
+   color: #727272;
+}
+.teams-title .of-our{
+    color: black;
+
+}
+.teams-title .features{
+    color: #FF900E;
+}
+
+/* responsive media queries */
+/* mobile devise */
+@media screen   and (max-width:576px) {
+    header{
+        padding: 20px ;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    .team-container{
+       flex-direction: column;
+    }
+
+    .tems-img-container{
+        grid-template-columns: 1fr;
+    }
+    .teams-contant{
+        padding-right:20px ;
+    padding-left: 20px;
+    text-align: center;
+    }
+     
+   
+}
+
+/* tablet   or medium devies */
+@media screen and (min-width:576px) and (max-width:960px) {
+  
+  header{
+    padding: 50px ;
+  }
+    nav, .team-container{
+        flex-direction: column;
+    }
+    
     
 }
